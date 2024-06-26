@@ -5,7 +5,7 @@ import HeroSection from "../../sections/HeroSection";
 
 const Main = () => {
   return (
-    <main className="min-h-dvh *:min-h-80 *:border *:border-primary-100">
+    <main className="full-width content-grid min-h-dvh *:min-h-80 *:border *:border-primary-100">
       <HeroSection />
       <AboutSection />
       <BannerSection />

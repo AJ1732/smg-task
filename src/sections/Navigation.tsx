@@ -1,6 +1,9 @@
 import Button from "../components/Button";
+import NavLink from "../components/NavLink";
 
 const Navigation = () => {
+  const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];
+  
   return (
     <header className="flex-between size-full">
       {/* LOGO */}
@@ -9,11 +12,9 @@ const Navigation = () => {
       {/* NAV LINKS */}
       <nav>
         <ul className="flex-between gap-4 [&>li]:p-2">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
+          {navlinks.map((navlink) => (
+            <NavLink key={navlink}>{navlink}</NavLink>
+          ))}
         </ul>
       </nav>
 

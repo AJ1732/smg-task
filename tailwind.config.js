@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+      },
       colors: {
         primary: {
           0o0: "#FDCA09",
@@ -23,7 +23,7 @@ export default {
           0o0: "#0B0B0B",
           100: "#101010",
         },
-      }
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
-import Button from "../components/Button";
-import NavItem from "../components/NavItem";
+import Button from "../ui/Button";
+import NavItem from "../ui/NavItem";
 
 const Navigation = () => {
   const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];

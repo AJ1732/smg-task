@@ -1,6 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Main from "../sections/Main";
+import Main from "../components/layout/Main";
 
 export const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Main />,
       },
-    ]
+    ],
   },
   {
     path: "/*",

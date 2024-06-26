@@ -2,7 +2,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const NavLink = ({ children }: Props) => {
+const NavItem = ({ children }: Props) => {
   return <div>{children}</div>;
 };
-export default NavLink;
+export default NavItem;

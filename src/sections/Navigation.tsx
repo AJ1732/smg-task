@@ -1,3 +1,5 @@
+import Button from "../components/Button";
+
 const Navigation = () => {
   return (
     <header className="flex-between size-full">
@@ -16,7 +18,7 @@ const Navigation = () => {
       </nav>
 
       {/* NAV BUTTON */}
-      <button>Start a project</button>
+      <Button>Start a project</Button>
     </header>
   );
 };

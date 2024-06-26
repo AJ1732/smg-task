@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <header className="flex-between size-full">
       {/* LOGO */}
-      <h1>Hand</h1>
+      <h1 className="text-2xl font-bold">Hand</h1>
 
       {/* NAV LINKS */}
       <nav>

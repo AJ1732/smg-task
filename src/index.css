@@ -5,6 +5,8 @@
 @tailwind utilities;
 
 :root {
+  @apply font-manrope;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -5,7 +5,7 @@ const Navigation = () => {
   const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];
 
   return (
-    <header className="flex-between size-full">
+    <header className="flex-between z-10 size-full bg-white">
       {/* LOGO */}
       <h1 className="text-2xl font-bold">Hand</h1>
 

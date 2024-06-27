@@ -5,7 +5,7 @@ import brooklyn from "../assets/img/brooklyn.png";
 
 const AboutSection = () => {
   return (
-    <section className="mb-[12.5rem]">
+    <section className="z-10 mb-[12.5rem] bg-white">
       {/* WHO ARE WE */}
       <div className="mb-[12.5rem] space-y-[8.4375rem] pt-[8.375rem] text-black-0">
         <article className="space-y-9">

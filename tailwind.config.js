@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
+        pjs: ["Plus Jakarta Sans", "sans-serif"],
       },
       colors: {
         primary: {

@@ -8,7 +8,7 @@ import hero_6 from "../assets/img/hero_6.png"
 const HeroSection = () => {
   return (
     <section className="full-width content-grid bg-primary-0">
-      <div className="flex flex-col items-center justify-between pt-[10.25rem]">
+      <div className="flex flex-col items-center justify-between pt-[10.25rem] xl:min-h-[56.56rem]">
         <h2 className="text-center text-[6.25rem] font-bold leading-[6.875rem]">
           Let’s create something <br /> great together.
         </h2>

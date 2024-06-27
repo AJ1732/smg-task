@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section className="full-width content-grid bg-primary-0">
       <div className="content relative flex flex-col items-center justify-between pt-[10.25rem] xl:min-h-[56.56rem]">
-        <h2 className="z-10 text-center text-5xl font-bold leading-[4rem] md:text-6xl md:leading-[5rem] lg:text-7xl lg:leading-[6.875rem] xl:text-[6.25rem]">
+        <h2 className="z-[1] text-center text-5xl font-bold leading-[4rem] md:text-6xl md:leading-[5rem] lg:text-7xl lg:leading-[6.875rem] xl:text-[6.25rem]">
           Let’s create something <br /> great together.
         </h2>
 

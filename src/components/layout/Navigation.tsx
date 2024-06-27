@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Button from "../ui/Button";
 import NavItem from "../ui/NavItem";
 
+const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];
+
 const Navigation = () => {
-  const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];
+  const [openNav, setOpenNav] = useState(false);
+  console.log(openNav);
 
   return (
     <header className="full-width content-grid z-10">
@@ -11,7 +15,7 @@ const Navigation = () => {
           {/* LOGO */}
           <h1 className="text-2xl font-bold">Hand</h1>
 
-          {/* NAV LINKS */}
+          {/* DESKTOP NAV LINKS */}
           <nav className="max-md:hidden">
             <ul className="flex-between gap-4 [&>li]:p-2">
               {navlinks.map((navlink) => (
@@ -25,8 +29,26 @@ const Navigation = () => {
             <Button>Start a project</Button>
           </div>
 
+          {/* MOBILE NAVLINKS */}
+          <nav
+            className={`${openNav ? "block" : "hidden"} absolute right-0 top-[110%] z-50 w-full space-y-6 bg-white p-4`}
+          >
+            <ul className="flex flex-col gap-4 [&>li]:p-2">
+              {navlinks.map((navlink) => (
+                <NavItem key={navlink}>{navlink}</NavItem>
+              ))}
+            </ul>
+
+            <div>
+              <Button>Start a project</Button>
+            </div>
+          </nav>
+
           {/* HAMBURGER */}
-          <div className="rounded p-4 transition-all duration-500 hover:bg-primary-0/20">
+          <button
+            onClick={() => setOpenNav((prev) => !prev)}
+            className="rounded p-4 transition-all duration-500 hover:bg-primary-0/20"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -43,7 +65,7 @@ const Navigation = () => {
               <line x1="21" x2="9" y1="12" y2="12" />
               <line x1="21" x2="7" y1="18" y2="18" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </header>

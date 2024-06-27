@@ -21,10 +21,23 @@ const ContactForm = () => {
           </h3>
         </legend>
 
-        <input type="text" name="name" id="name" placeholder="Name" />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="url" name="url" id="url" placeholder="Website Url" />
+        <input required type="text" name="name" id="name" placeholder="Name" />
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <input
+          required
+          type="url"
+          name="url"
+          id="url"
+          placeholder="Website Url"
+        />
         <textarea
+          required
           name="project"
           id="project"
           placeholder="Project Details"

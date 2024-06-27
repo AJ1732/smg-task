@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../ui/Button";
 import NavItem from "../ui/NavItem";
+import { Link, NavLink } from "react-router-dom";
 
 const navlinks = ["Home", "About Us", "Services", "Blog", "Contact Us"];
 
@@ -13,13 +14,17 @@ const Navigation = () => {
       <div className="content relative">
         <div className="flex-between size-full bg-white">
           {/* LOGO */}
-          <h1 className="text-2xl font-bold">Hand</h1>
+          <Link to="/">
+            <h1 className="text-2xl font-bold">Hand</h1>
+          </Link>
 
           {/* DESKTOP NAV LINKS */}
           <nav className="max-md:hidden">
             <ul className="flex-between gap-4 [&>li]:p-2">
               {navlinks.map((navlink) => (
-                <NavItem key={navlink}>{navlink}</NavItem>
+                <NavItem key={navlink}>
+                  <NavLink to={navlink.toLocaleLowerCase()}>{navlink}</NavLink>
+                </NavItem>
               ))}
             </ul>
           </nav>
@@ -47,7 +52,7 @@ const Navigation = () => {
           {/* HAMBURGER */}
           <button
             onClick={() => setOpenNav((prev) => !prev)}
-            className="md:hidden rounded p-4 transition-all duration-500 hover:bg-primary-0/20"
+            className="rounded p-4 transition-all duration-500 hover:bg-primary-0/20 md:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

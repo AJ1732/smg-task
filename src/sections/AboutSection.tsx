@@ -35,7 +35,7 @@ const AboutSection = () => {
           </h3>
         </header>
 
-        <div className="flex-center gap-14">
+        <div className="flex-center flex-wrap gap-14">
           {heroes.map(({ id, src, name, role }) => (
             <article
               key={id}

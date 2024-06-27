@@ -31,7 +31,7 @@
     [full-width-end];
 }
 .content-grid.all {
-  grid-template-rows: 6rem 1fr;
+  grid-template-rows: 1fr;
 }
 .content-grid > :not(.full-width) {
   grid-column: content;

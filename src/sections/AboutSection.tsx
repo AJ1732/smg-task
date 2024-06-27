@@ -10,7 +10,7 @@ const AboutSection = () => {
       <div className="mb-[12.5rem] space-y-[8.4375rem] pt-[8.375rem] text-black-0">
         <article className="space-y-9">
           <h3 className="text-[2.75rem] font-bold">Who we are</h3>
-          <p className="text-3xl font-medium">
+          <p className="text-3xl font-medium max-md:text-2xl max-md:leading-10">
             We love what we do and create partnerships with our clients to
             ensure their digital transformation is positioned for long-term
             success.We believe that the human dimensions essential to start any
@@ -19,7 +19,7 @@ const AboutSection = () => {
           </p>
         </article>
 
-        <figure>
+        <figure className="max-sm:hidden">
           <img
             src={about}
             alt="A half-sliced orange, a bottle of orange juice and ginger displayed on a yello background "
@@ -42,7 +42,7 @@ const AboutSection = () => {
               className="space-y-[2.8065rem] px-5 pb-9 pt-4 shadow"
             >
               <figure>
-                <img src={src} alt={name} className="max-w-[24.5rem]" />
+                <img src={src} alt={name} className="w-full max-w-[24.5rem]" />
               </figure>
               <div>
                 <h4 className="text-[2.125rem] font-bold text-black-0">

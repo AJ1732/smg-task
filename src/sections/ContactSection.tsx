@@ -4,7 +4,7 @@ import contact from "../assets/img/contact.png";
 const ContactSection = () => {
   return (
     <section>
-      <div className="flex-between py-[12.75rem]">
+      <div className="flex items-start justify-between py-[12.75rem]">
         <figure className="flex-center h-[55.6875rem] w-[38.875rem] bg-[#FEF1E0]">
           <img
             src={contact}

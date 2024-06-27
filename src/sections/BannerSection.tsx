@@ -1,7 +1,7 @@
 const BannerSection = () => {
   return (
     <section className="full-width content-grid bg-black-0">
-      <div className="flex-between pb-[3.4375rem] pt-[3.685rem] text-white">
+      <div className="flex flex-wrap gap-8 justify-between items-center pb-[3.4375rem] pt-[3.685rem] text-white">
         {stats.map(({ id, value, text }) => (
           <div key={id} className="space-y-[0.875rem]">
             <h4 className="text-6xl font-bold text-primary-100">{value} +</h4>

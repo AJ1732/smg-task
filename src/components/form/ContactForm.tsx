@@ -1,9 +1,13 @@
-const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  console.log("Submitted");
-};
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    navigate("./success");
+  };
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -11,7 +15,7 @@ const ContactForm = () => {
     >
       <fieldset className="flex-center lg:flex-end flex-col gap-7">
         <legend className="mb-12 max-md:mx-auto lg:ml-auto">
-          <h3 className="text-center lg:text-right text-[2.75rem] font-bold">
+          <h3 className="text-center text-[2.75rem] font-bold lg:text-right">
             We'd love to hear <br />
             from you
           </h3>

@@ -1,6 +1,7 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Main from "../components/layout/Main";
+import SuccessPage from "../components/layout/SuccessPage";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Main />,
+      },
+      {
+        path: "/success",
+        element: <SuccessPage />,
       },
     ],
   },

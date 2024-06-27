@@ -44,14 +44,14 @@ const AboutSection = () => {
               <figure>
                 <img src={src} alt={name} className="max-w-[24.5rem]" />
               </figure>
-              <figcaption>
+              <div>
                 <h4 className="text-[2.125rem] font-bold text-black-0">
                   {name}
                 </h4>
                 <p className="text-2xl font-medium text-black-0 text-opacity-50">
                   {role}
                 </p>
-              </figcaption>
+              </div>
             </article>
           ))}
         </div>

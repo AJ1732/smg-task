@@ -4,7 +4,7 @@ interface Props {
 
 const NavItem = ({ children }: Props) => {
   return (
-    <span className="font-bold cursor-default text-gray-500 transition-all duration-500 hover:text-secondary-100">
+    <span className="font-bold cursor-default text-gray-500 transition-all p-2 duration-500 hover:text-secondary-100">
       {children}
     </span>
   );

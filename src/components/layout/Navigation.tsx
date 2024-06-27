@@ -47,7 +47,7 @@ const Navigation = () => {
           {/* HAMBURGER */}
           <button
             onClick={() => setOpenNav((prev) => !prev)}
-            className="rounded p-4 transition-all duration-500 hover:bg-primary-0/20"
+            className="md:hidden rounded p-4 transition-all duration-500 hover:bg-primary-0/20"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

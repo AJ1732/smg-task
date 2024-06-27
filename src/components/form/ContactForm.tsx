@@ -14,7 +14,7 @@ const ContactForm = () => {
       className="size-full max-w-[46.9375rem] text-black-0"
     >
       <fieldset className="flex-center lg:flex-end flex-col gap-7">
-        <legend className="mb-12 max-md:mx-auto lg:ml-auto">
+        <legend className="mb-12 max-lg:mx-auto lg:ml-auto">
           <h3 className="text-center text-[2.75rem] font-bold lg:text-right">
             We'd love to hear <br />
             from you

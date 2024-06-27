@@ -7,17 +7,18 @@ import NavItem from "../ui/NavItem";
 
 const Footer = () => {
   return (
-    <footer className="full-width content-grid bg-grey-50 font-pjs">
+    <footer className="full-width content-grid min-h-[24.875rem] bg-grey-50 font-pjs">
       <div className="content flex flex-col justify-between pb-8 pt-20">
-        <div className="flex-between">
-          <div className="space-y-7">
+        {/* FIRST DIVISION */}
+        <div className="flex items-center justify-between gap-12 max-md:flex-col">
+          <div className="mr-auto space-y-7">
             <h3 className="text-2xl font-bold leading-6">Hand</h3>
             <p className="font-pjs text-sm font-semibold leading-6 text-grey-500">
               We love what we do and create partnerships
             </p>
           </div>
 
-          <div className="flex flex-col items-end justify-center text-grey-600">
+          <div className="ml-auto flex max-w-max flex-col items-end justify-center text-grey-600">
             <Button>Start a project</Button>
 
             <p className="mx-auto mb-4 mt-6 leading-[1.3125rem]">
@@ -37,11 +38,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex-center size-full">
+        <div className="flex-center size-full max-md:my-10">
           <div className="w-full max-w-[75rem] border-t-[0.0625rem] border-grey-600"></div>
         </div>
 
-        <div className="flex-between">
+        <div className="flex items-center justify-between max-md:flex-col">
           <p className="text-lg text-grey-600">
             © 2024 hand. All Rights Reserved
           </p>

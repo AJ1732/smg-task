@@ -3,7 +3,7 @@ import success from "../../assets/img/success.png";
 
 const SuccessPage = () => {
   return (
-    <main className="full-width content-grid min-h-dvh bg-primary-0">
+    <main className="full-width content-grid mt-24 min-h-dvh bg-primary-0">
       <div className="flex flex-col items-start lg:items-center justify-center gap-20 py-12 xl:flex-row">
         <div className="space-y-6 lg:pb-28">
           <hgroup className="space-y-4">
